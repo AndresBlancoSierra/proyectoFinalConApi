@@ -2,8 +2,7 @@ import {useEffect, useRef} from "react";
 import { gsap } from "gsap";
 
 const pastelColors = [
-    "#FFB3BA", "#FFDFBA", "#FFFFBA",
-    "#FFB3E6", "#FFD9B3", "#FFB3CC", "#FFCCB3",
+    "#FFDFBA", "#FFFFBA", "#FFD9B3", "#FFCCB3",
 ];
 
 const Hero = () => {
