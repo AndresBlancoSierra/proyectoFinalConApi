@@ -85,7 +85,7 @@ const Trabajos2D = () => {
                 <p>
                     Colección de proyectos de animación 2D que demuestran mi versatilidad técnica
                     y creativa en el campo del motion design. Cada trabajo representa{" "}
-                    <span className="text-white">
+                    <span style={{ color: "#e34c57" }}>
                         un enfoque único en la narrativa visual y la expresividad del movimiento.
                     </span>{" "}
                     Desde animaciones frame-by-frame hasta motion graphics complejos, estos

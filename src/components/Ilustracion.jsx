@@ -13,7 +13,7 @@ const Ilustracion = () => {
                     Desarrollo de ilustraciones digitales con técnicas avanzadas que capturan
                     la esencia de cada concepto. Utilizo herramientas profesionales para crear
                     obras que{" "}
-                    <span className="text-white">
+                    <span style={{ color: "#e34c57" }}>
             combinan arte tradicional con tecnología digital de vanguardia.
           </span>{" "}
                     Cada proyecto es una oportunidad para explorar nuevos estilos y técnicas,
