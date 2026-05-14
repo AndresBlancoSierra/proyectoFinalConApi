@@ -115,7 +115,7 @@ body {
         }
 
         a:hover {
-          color: #FFB3BA;
+      color: #888;
           opacity: 1;
         }
       }
@@ -160,7 +160,7 @@ body {
 
     h2 {
       @apply font-semibold text-3xl lg:text-6xl;
-      color: #FFB3BA;
+      color: #888;
     }
 
     .controls {
