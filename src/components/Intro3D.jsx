@@ -37,10 +37,10 @@ const Intro3D = () => {
 
             <div className="content">
                 <div className="wrapper">
-                    <div className="lg:max-w-md">
+                    <div className="max-w-3xl mx-auto text-center">
                          <h2>Animación 3D</h2>
 
-                        <div className="space-y-5 mt-7 pe-10">
+                        <div className="space-y-6 mt-7">
                             <p>
                                  Presentando {" "}
                                 <span style={{ color: "#E8BAFF" }}>
@@ -54,19 +54,6 @@ const Intro3D = () => {
                             <p>
                                  Utilizamos software de vanguardia para modelado, texturizado, rigging y animación 3D, ofreciendo precisión en cada polígono y fluidez en cada movimiento para resultados visualmente impactantes.
                             </p>
-                        </div>
-                    </div>
-
-                     <div className="max-w-3xs space-y-14">
-                        <div className="space-y-2">
-                            <p>Hasta</p>
-                            <h3>24 fps</h3>
-                             <p>animación fluida en tiempo real</p>
-                        </div>
-                        <div className="space-y-2">
-                            <p>Más de</p>
-                            <h3>100+</h3>
-                             <p>modelos 3D creados</p>
                         </div>
                     </div>
                 </div>

@@ -65,8 +65,6 @@ const ModelScroll = () => {
 const Trabajos3D = () => {
     return (
         <section id="trabajos-3d">
-             <h2>Trabajos 3D</h2>
-
             <Canvas 
                 id="f-canvas" 
                 camera={{ position: [0, 20, 40], fov: 50, near: 0.1, far: 400 }}

@@ -37,10 +37,10 @@ const Intro2D = () => {
 
             <div className="content">
                 <div className="wrapper">
-                    <div className="lg:max-w-md">
+                    <div className="max-w-3xl mx-auto text-center">
                          <h2>Animación 2D</h2>
 
-                        <div className="space-y-5 mt-7 pe-10">
+                        <div className="space-y-6 mt-7">
                             <p>
                                 Presentando {" "}
                                 <span style={{ color: "#E8BAFF" }}>
@@ -54,19 +54,6 @@ const Intro2D = () => {
                             <p>
                                 Utilizamos herramientas digitales de vanguardia que mantienen la calidez del arte tradicional, ofreciendo precisión en cada trazo y fluidez en cada secuencia animada para resultados visualmente impactantes.
                             </p>
-                        </div>
-                    </div>
-
-                     <div className="max-w-3xs space-y-14">
-                        <div className="space-y-2">
-                            <p>Hasta</p>
-                            <h3>24 fps</h3>
-                            <p>animación fluida frame-by-frame</p>
-                        </div>
-                        <div className="space-y-2">
-                            <p>Más de</p>
-                            <h3>100+</h3>
-                            <p>proyectos de animación completados</p>
                         </div>
                     </div>
                 </div>
