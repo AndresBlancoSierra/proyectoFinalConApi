@@ -105,7 +105,7 @@ const Hero = () => {
                         </span>
                     ))}
                 </h1>
-                <h2 className="hero-subtitle">PORTOFOLIO</h2>
+                <h2 className="hero-subtitle">PORTFOLIO</h2>
             </div>
         </section>
     )
