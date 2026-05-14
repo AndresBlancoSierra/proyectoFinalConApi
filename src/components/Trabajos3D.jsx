@@ -55,7 +55,7 @@ const ModelScroll = () => {
 
     return (
         <group ref={groupRef}>
-            <Suspense fallback={<Html><h1 className="text-gray-900 text-3xl uppercase">Loading...</h1></Html>}>
+            <Suspense fallback={<Html><h1 style={{ color: "#E8BAFF" }} className="text-3xl uppercase">Loading...</h1></Html>}>
                 <CasaModel scale={isMobile ? 0.32 : 0.48} position={[0, -1, 0]} />
             </Suspense>
         </group>
@@ -72,7 +72,7 @@ const Trabajos3D = () => {
                 camera={{ position: [0, 20, 40], fov: 50, near: 0.1, far: 400 }}
                 shadows
             >
-                <color attach="background" args={['#e5e7eb']} />
+                <color attach="background" args={['#FFDFBA']} />
                 <StudioLights />
                 <ModelScroll />
             </Canvas>

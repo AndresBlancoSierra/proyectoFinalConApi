@@ -78,7 +78,7 @@ const Highlights = () => {
     <section id="highlights" className="py-20 lg:py-32">
       <div className="container">
         <div className="flex flex-col items-center justify-center text-center mb-16 lg:mb-24">
-          <h2 className="thanks-text text-5xl lg:text-7xl font-medium text-gray-900">
+          <h2 className="thanks-text text-5xl lg:text-7xl font-medium">
             gracias
           </h2>
         </div>
@@ -86,7 +86,7 @@ const Highlights = () => {
         <div className="vimeo-video max-w-4xl mx-auto">
           {loading && <p>Cargando video...</p>}
 
-          {error && <p className="text-red-500">{error}</p>}
+          {error && <p style={{ color: "#FFB3BA" }}>{error}</p>}
 
           {!loading && !error && video && (
             <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>

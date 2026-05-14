@@ -43,7 +43,7 @@ const Intro3D = () => {
                         <div className="space-y-5 mt-7 pe-10">
                             <p>
                                  Presentando {" "}
-                                <span className="text-gray-900 font-bold">
+                                <span style={{ color: "#E8BAFF" }}>
                                     modelado 3D, texturizado y animación avanzada
                                 </span>
                                 . Creación de
