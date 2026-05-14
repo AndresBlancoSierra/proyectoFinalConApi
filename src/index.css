@@ -111,11 +111,11 @@ body {
 
         a {
           @apply hidden md:block font-regular text-sm cursor-pointer transition-all duration-300 ease-in-out;
-          color: #FFB3BA;
+          color: #888;
         }
 
         a:hover {
-          color: #E8BAFF;
+          color: #FFB3BA;
           opacity: 1;
         }
       }
@@ -124,7 +124,7 @@ body {
         @apply px-4 py-1.5 rounded-full font-medium text-xs md:text-sm
                border-none outline-none cursor-pointer;
         background-color: #FFB3BA;
-        color: #666;
+        color: #fff;
       }
     }
   }
