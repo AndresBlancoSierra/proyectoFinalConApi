@@ -111,7 +111,7 @@ body {
 
         a {
           @apply hidden md:block font-regular text-sm cursor-pointer transition-all duration-300 ease-in-out;
-          color: #B3D9FF;
+          color: #FFB3BA;
         }
 
         a:hover {
@@ -126,7 +126,7 @@ body {
                transform hover:-translate-y-0.5 active:scale-95
                border-none outline-none cursor-pointer
                shadow-md hover:shadow-lg;
-        background-color: var(--pastel-sky);
+        background-color: #FFB3BA;
         color: #666;
       }
 
