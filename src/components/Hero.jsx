@@ -2,9 +2,8 @@ import {useEffect, useRef} from "react";
 import { gsap } from "gsap";
 
 const pastelColors = [
-    "#FFB3BA", "#FFDFBA", "#FFFFBA", "#BAFFC9", "#BAE1FF",
-    "#E8BAFF", "#FFB3E6", "#B3FFE6", "#FFD9B3", "#B3D9FF",
-    "#FFB3CC", "#CCFFB3", "#B3FFF0", "#F0B3FF", "#FFCCB3",
+    "#FFB3BA", "#FFDFBA", "#FFFFBA",
+    "#FFB3E6", "#FFD9B3", "#FFB3CC", "#FFCCB3",
 ];
 
 const Hero = () => {
@@ -107,7 +106,7 @@ const Hero = () => {
                         </span>
                     ))}
                 </h1>
-                <h2 className="hero-subtitle">PROFESIONAL DE ANIMACIÓN</h2>
+                <h2 className="hero-subtitle">PORTOFOLIO</h2>
             </div>
         </section>
     )
