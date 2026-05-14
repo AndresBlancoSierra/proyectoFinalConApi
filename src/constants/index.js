@@ -113,42 +113,23 @@ const trabajos2D = [
         src: "/trabajos2d/almohada.mp4", 
         type: "video",
         title: "Almohada Animada",
-        description: "Animación suave de objeto con física realista"
+        description: "Animación suave de objeto con física realista",
+        storyboard: "/trabajos2d/Sin título-l.png"
     },
     { 
         id: "t2", 
         src: "/trabajos2d/araña.mp4", 
         type: "video",
         title: "Araña Mecánica",
-        description: "Animación de personaje mecánico con movimiento articulado"
+        description: "Animación de personaje mecánico con movimiento articulado",
+        storyboard: "/trabajos2d/story ara.png"
     },
     { 
         id: "t3", 
-        src: "/trabajos2d/durmiendo.gif", 
-        type: "image",
-        title: "Personaje Durmiendo",
-        description: "Animación loop de personaje en reposo"
-    },
-    { 
-        id: "t4", 
         src: "/trabajos2d/pendulos siire.mp4", 
-        type: "video", 
+        type: "video",
         title: "Péndulos Sincronizados",
         description: "Estudio de movimiento y física de péndulos"
-    },
-    { 
-        id: "t5", 
-        src: "/trabajos2d/story ara.png", 
-        type: "image",
-        title: "Storyboard Araña",
-        description: "Planificación visual para animación de personaje"
-    },
-    { 
-        id: "t6", 
-        src: "/trabajos2d/Sin título-l.png", 
-        type: "image",
-        title: "Diseño Conceptual",
-        description: "Ilustración conceptual para proyecto de animación"
     },
 ];
 

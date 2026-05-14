@@ -43,7 +43,7 @@ const Intro2D = () => {
                         <div className="space-y-6 mt-7">
                             <p>
                                 Presentando {" "}
-                                <span style={{ color: "#FFB3BA" }}>
+                                <span style={{ color: "#e34c57" }}>
                                     técnicas tradicionales y digitales combinadas
                                 </span>
                                 . Creación de

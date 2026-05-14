@@ -15,13 +15,13 @@ const Footer = () => {
                     {/* Información de contacto */}
                     <div className="text-center lg:text-left">
                         <h3 className="text-3xl lg:text-4xl font-bold mb-6">Contáctame</h3>
-                        <p className="text-gray-300 text-lg mb-4">
+                        <p className="text-lg mb-4">
                             Portafolio de Animación - Danna Blanco
                         </p>
-                        <p className="text-gray-300 text-lg mb-2">
+                        <p className="text-lg mb-2">
                             Contacto: danna.blanco@taller5.edu.co
                         </p>
-                        <p className="text-gray-300 text-lg">
+                        <p className="text-lg">
                             Tel: +57 323 2823205
                         </p>
                     </div>
@@ -40,7 +40,7 @@ const Footer = () => {
 
                 {/* Copyright */}
                 <div className="text-center">
-                    <p className="text-gray-400 text-sm">
+                    <p className="text-sm">
                         Copyright © 2024 Danna Blanco - Portafolio de Animación. Todos los derechos reservados.
                     </p>
                 </div>

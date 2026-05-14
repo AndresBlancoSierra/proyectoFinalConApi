@@ -86,7 +86,7 @@ const Highlights = () => {
         <div className="vimeo-video max-w-4xl mx-auto">
           {loading && <p>Cargando video...</p>}
 
-          {error && <p style={{ color: "#FFB3BA" }}>{error}</p>}
+          {error && <p style={{ color: "#e34c57" }}>{error}</p>}
 
           {!loading && !error && video && (
             <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
