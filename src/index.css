@@ -47,7 +47,7 @@
   --font-medium: "Medium";
   --font-semibold: "SemiBold";
   --font-bold: "Bold";
-  --font-pastel: "Fredoka", sans-serif;
+  --font-pastel: "Bangers", cursive;
   --color-primary: #BAE1FF;
 }
 
@@ -138,7 +138,8 @@ body {
       .hero-title {
         @apply font-bold text-5xl lg:text-8xl mb-4;
         font-family: var(--font-pastel);
-        font-weight: 600;
+        font-weight: 400;
+        letter-spacing: 2px;
         text-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
 
         .hero-letter {
