@@ -72,7 +72,7 @@ const Trabajos3D = () => {
                 camera={{ position: [0, 20, 40], fov: 50, near: 0.1, far: 400 }}
                 shadows
             >
-                <color attach="background" args={['#FFDFBA']} />
+                <color attach="background" args={['#FFF5F7']} />
                 <StudioLights />
                 <ModelScroll />
             </Canvas>
