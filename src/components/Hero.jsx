@@ -8,31 +8,10 @@ const pastelColors = [
 ];
 
 const Hero = () => {
-    const containerRef = useRef();
-    const ballRef = useRef();
     const titleRef = useRef();
     const letterRefs = useRef([]);
 
     useEffect(() => {
-        const ball = ballRef.current;
-        if (ball) {
-            gsap.to(ball, {
-                y: -100,
-                duration: 0.8,
-                repeat: -1,
-                yoyo: true,
-                ease: "power2.inOut"
-            });
-
-            gsap.to(ball, {
-                x: "+=200",
-                duration: 2,
-                repeat: -1,
-                yoyo: true,
-                ease: "power1.inOut"
-            });
-        }
-
         const title = titleRef.current;
         if (title) {
             gsap.from(title, {
@@ -42,35 +21,6 @@ const Hero = () => {
                 ease: "power3.out"
             });
         }
-
-        const container = containerRef.current;
-        if (container) {
-            for (let i = 0; i < 15; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                particle.style.left = `${Math.random() * 100}%`;
-                particle.style.top = `${Math.random() * 100}%`;
-                particle.style.width = `${Math.random() * 10 + 5}px`;
-                particle.style.height = particle.style.width;
-                particle.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 70%)`;
-                container.appendChild(particle);
-
-                gsap.to(particle, {
-                    y: `+=${Math.random() * 100 - 50}`,
-                    x: `+=${Math.random() * 100 - 50}`,
-                    duration: Math.random() * 3 + 2,
-                    repeat: -1,
-                    yoyo: true,
-                    ease: "sine.inOut"
-                });
-            }
-        }
-
-        return () => {
-            if (container) {
-                container.innerHTML = '';
-            }
-        };
     }, []);
 
     useEffect(() => {
@@ -143,7 +93,7 @@ const Hero = () => {
     const letters = "DANNA BLANCO".split("");
 
     return (
-        <section id="hero" ref={containerRef}>
+        <section id="hero">
             <div className="hero-content">
                 <h1 ref={titleRef} className="hero-title">
                     {letters.map((letter, i) => (
@@ -159,15 +109,6 @@ const Hero = () => {
                 </h1>
                 <h2 className="hero-subtitle">PROFESIONAL DE ANIMACIÓN</h2>
             </div>
-
-            <div className="animation-ball" ref={ballRef}></div>
-
-            <div className="floating-shapes">
-                <div className="shape triangle"></div>
-                <div className="shape circle"></div>
-                <div className="shape square"></div>
-            </div>
-
         </section>
     )
 }
