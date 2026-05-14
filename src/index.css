@@ -123,15 +123,10 @@ body {
       .contact-btn {
         @apply px-4 py-1.5 rounded-full font-medium text-xs md:text-sm
                transition-all duration-300 ease-in-out
-               transform hover:-translate-y-0.5 active:scale-95
                border-none outline-none cursor-pointer
-               shadow-md hover:shadow-lg;
+               shadow-md;
         background-color: #FFB3BA;
         color: #666;
-      }
-
-      .contact-btn:hover {
-        background-color: var(--pastel-lavender);
       }
     }
   }
@@ -304,7 +299,7 @@ body {
   }
 
   #ilustracion {
-    @apply w-dvw overflow-hidden pt-20 lg:pt-20 flex flex-col items-center relative;
+    @apply w-dvw overflow-hidden pt-40 lg:pt-40 flex flex-col items-center relative;
 
     h2 {
       @apply font-semibold text-3xl lg:text-6xl max-w-2xl text-center;
@@ -344,8 +339,7 @@ body {
   }
 
   #highlights {
-    @apply w-full;
-    background: linear-gradient(to bottom, var(--pastel-yellow), var(--pastel-mint));
+    @apply w-full py-20 lg:py-32;
 
     .container {
       @apply mx-auto px-5 2xl:px-0;
@@ -416,7 +410,6 @@ body {
 
   footer {
     @apply py-16;
-    background-color: var(--pastel-peach);
     color: #888;
 
     .container {
@@ -433,7 +426,7 @@ body {
 
     button {
       @apply rounded-full px-10 py-4 text-xl font-semibold transition-colors duration-300;
-      background-color: var(--pastel-sky);
+      background-color: #FFB3BA;
       color: #666;
     }
 
@@ -448,7 +441,7 @@ body {
   }
 
   #trabajos-2d {
-    @apply w-dvw overflow-hidden pt-20 lg:pt-20 flex flex-col items-center relative;
+    @apply w-dvw overflow-hidden pt-40 lg:pt-40 flex flex-col items-center relative;
 
     .carousel-slide-wrapper {
       @apply relative w-full h-full overflow-hidden rounded-2xl;
