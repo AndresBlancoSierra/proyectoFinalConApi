@@ -150,7 +150,7 @@ body {
 
       .hero-subtitle {
         @apply font-medium text-xl lg:text-3xl;
-        color: var(--pastel-sky);
+        color: #888;
       }
     }
   }
@@ -160,7 +160,7 @@ body {
 
     h2 {
       @apply font-semibold text-3xl lg:text-6xl;
-      color: #888;
+      color: #FFB3BA;
     }
 
     .controls {
