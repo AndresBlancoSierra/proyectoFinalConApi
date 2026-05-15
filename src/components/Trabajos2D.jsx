@@ -30,7 +30,7 @@ const Trabajos2D = () => {
     return (
         <section id="trabajos-2d">
             <AnimatedTitle text="Animación 2D" />
-            <div className="carousel-2d">
+            <div className={`carousel-2d${selected ? " blurred" : ""}`}>
                 <button className="carousel-arrow left" onClick={prev} disabled={currentIndex === 0}>‹</button>
 
                 <div className="carousel-2d-track">
@@ -53,26 +53,27 @@ const Trabajos2D = () => {
             </div>
 
             {selected && (
-                <div className="detail-2d">
-                    <button className="detail-close" onClick={closeDetail}>✕</button>
-
-                    <div className="detail-media">
-                        {selected.type === "video" ? (
-                            <video
-                                ref={mediaRef}
-                                src={selected.src}
-                                controls
-                                autoPlay
-                                muted
-                                playsInline
-                            />
-                        ) : (
-                            <img src={selected.src} alt={selected.title} />
-                        )}
+                <div className="detail-2d" onClick={closeDetail}>
+                    <div className="detail-media-wrapper" onClick={(e) => e.stopPropagation()}>
+                        <button className="detail-close" onClick={closeDetail}>✕</button>
+                        <div className="detail-media">
+                            {selected.type === "video" ? (
+                                <video
+                                    ref={mediaRef}
+                                    src={selected.src}
+                                    controls
+                                    autoPlay
+                                    muted
+                                    playsInline
+                                />
+                            ) : (
+                                <img src={selected.src} alt={selected.title} />
+                            )}
+                        </div>
                     </div>
 
                     {selected.storyboard && (
-                        <div className="detail-info">
+                        <div className="detail-info" onClick={(e) => e.stopPropagation()}>
                             <div className="detail-storyboard">
                                 <h4>Storyboard</h4>
                                 <img
@@ -85,7 +86,7 @@ const Trabajos2D = () => {
                 </div>
             )}
 
-            <div className="content-trabajos">
+            <div className={`content-trabajos${selected ? " blurred" : ""}`}>
                 <p>
                     Colección de proyectos de animación 2D que demuestran mi versatilidad técnica
                     y creativa en el campo del motion design. Cada trabajo representa{" "}
