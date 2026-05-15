@@ -23,7 +23,6 @@ const Intro2D = () => {
                     { transform: 'matrix(80, 0, 0, 80, 0, 0)' },
                     { transform: 'matrix(1.1, 0, 0, 1.1, 0, 0)' }
                 )
-                .to('.content', { opacity: 1, y: 0, ease: 'power1.in' });
         }
     }, [isTablet])
 

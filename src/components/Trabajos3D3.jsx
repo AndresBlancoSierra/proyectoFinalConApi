@@ -13,7 +13,7 @@ const Trabajos3D3 = () => {
 
     return (
         <section id="trabajos-3d3">
-            <AnimatedTitle text="ANIMACIONES 3D" />
+            <AnimatedTitle text="3D" />
             <div className={`mural-grid${selected ? " blurred" : ""}`}>
                 {rows.map((rowItems, r) => (
                     <div className="mural-row" key={r}>

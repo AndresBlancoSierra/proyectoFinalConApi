@@ -2,7 +2,7 @@ const navLinks = [
     { label: "Inicio" },
     { label: "Animaciones 2D" },
     { label: "Ilustración" },
-    { label: "Animaciones 3D" },
+    { label: "3D" },
     { label: "Contacto" },
 ];
 

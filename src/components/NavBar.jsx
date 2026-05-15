@@ -28,7 +28,7 @@ const NavBar = () => {
                             case "Ilustración":
                                 href = "#ilustracion";
                                 break;
-                            case "Animaciones 3D":
+                            case "3D":
                                 href = "#intro-3d";
                                 break;
                             case "Contacto":
