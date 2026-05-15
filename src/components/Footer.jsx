@@ -15,7 +15,7 @@ const Footer = () => {
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
                     {/* Información de contacto */}
                     <div className="text-center lg:text-left">
-                        <AnimatedTitle text="Contáctame" as="h3" />
+                        <AnimatedTitle text="Contáctame" as="h3" className="!text-3xl lg:!text-6xl" />
                         <p className="text-lg mb-4">
                             Portafolio de Animación - Danna Blanco
                         </p>
