@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { trabajos2D } from "../constants/index.js";
+import AnimatedTitle from "./AnimatedTitle";
 
 const Trabajos2D = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -28,6 +29,7 @@ const Trabajos2D = () => {
 
     return (
         <section id="trabajos-2d">
+            <AnimatedTitle text="Animación 2D" />
             <div className="carousel-2d">
                 <button className="carousel-arrow left" onClick={prev} disabled={currentIndex === 0}>‹</button>
 

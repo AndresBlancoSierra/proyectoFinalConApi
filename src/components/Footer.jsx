@@ -1,4 +1,5 @@
 import {footerLinks} from "../constants/index.js";
+import AnimatedTitle from "./AnimatedTitle";
 
 const Footer = () => {
     const handleWhatsAppClick = () => {
@@ -14,7 +15,7 @@ const Footer = () => {
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
                     {/* Información de contacto */}
                     <div className="text-center lg:text-left">
-                        <h3 className="text-3xl lg:text-4xl font-bold mb-6">Contáctame</h3>
+                        <AnimatedTitle text="Contáctame" as="h3" />
                         <p className="text-lg mb-4">
                             Portafolio de Animación - Danna Blanco
                         </p>
