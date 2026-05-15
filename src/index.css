@@ -442,7 +442,7 @@ body {
   }
 
   #trabajos-2d {
-    @apply w-dvw pt-40 lg:pt-40 pb-20 flex flex-col items-center relative;
+    @apply w-dvw pt-16 lg:pt-16 pb-20 flex flex-col items-center relative;
 
     .carousel-2d {
       @apply flex items-center gap-4 w-full max-w-5xl mx-auto px-4;
@@ -528,10 +528,6 @@ body {
             max-height: 40vh;
           }
 
-          .sb-placeholder {
-            @apply italic text-base;
-            color: #888;
-          }
         }
       }
     }

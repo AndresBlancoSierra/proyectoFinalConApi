@@ -63,21 +63,17 @@ const Trabajos2D = () => {
                         />
                     </div>
 
-                    <div className="detail-info">
-                        <div className="detail-storyboard">
-                            {selected.storyboard ? (
-                                <>
-                                    <h4>Storyboard</h4>
-                                    <img
-                                        src={selected.storyboard}
-                                        alt={`Storyboard ${selected.title}`}
-                                    />
-                                </>
-                            ) : (
-                                <p className="sb-placeholder">Sin storyboard disponible</p>
-                            )}
+                    {selected.storyboard && (
+                        <div className="detail-info">
+                            <div className="detail-storyboard">
+                                <h4>Storyboard</h4>
+                                <img
+                                    src={selected.storyboard}
+                                    alt={`Storyboard ${selected.title}`}
+                                />
+                            </div>
                         </div>
-                    </div>
+                    )}
                 </div>
             )}
 

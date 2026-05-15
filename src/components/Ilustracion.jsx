@@ -1,10 +1,11 @@
 import { performanceImages } from "../constants/index.js";
 import InfiniteCarousel from "./InfiniteCarousel";
+import AnimatedTitle from "./AnimatedTitle";
 
 const Ilustracion = () => {
     return (
         <section id="ilustracion">
-            <h2>Ilustración</h2>
+            <AnimatedTitle text="Ilustración" />
 
             <InfiniteCarousel items={performanceImages} />
 
@@ -16,8 +17,7 @@ const Ilustracion = () => {
                     <span style={{ color: "#e34c57" }}>
             combinan arte tradicional con tecnología digital de vanguardia.
           </span>{" "}
-                    Cada proyecto es una oportunidad para explorar nuevos estilos y técnicas,
-                    desde ilustraciones vectoriales hasta pintura digital, siempre buscando
+                    Cada proyecto es una oportunidad para explorar nuevos estilos y técnicas, siempre buscando
                     la máxima expresividad y calidad visual en cada creación.
                 </p>
             </div>

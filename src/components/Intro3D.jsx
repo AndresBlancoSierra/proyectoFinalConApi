@@ -1,6 +1,7 @@
 import {useMediaQuery} from "react-responsive";
 import {useGSAP} from "@gsap/react";
 import gsap from 'gsap';
+import AnimatedTitle from "./AnimatedTitle";
 
 const Intro3D = () => {
     const isTablet = useMediaQuery({ query: '(max-width: 1024px)'});
@@ -38,7 +39,7 @@ const Intro3D = () => {
             <div className="content">
                 <div className="wrapper">
                     <div className="max-w-3xl mx-auto text-center">
-                         <h2>Animación 3D</h2>
+                         <AnimatedTitle text="Animación 3D" />
 
                         <div className="space-y-6 mt-7">
                             <p>
