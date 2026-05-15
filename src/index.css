@@ -207,7 +207,6 @@ body {
 
   #intro-2d {
     @apply relative;
-    z-index: 2;
 
     .media {
       @apply relative lg:overflow-hidden;
@@ -443,7 +442,8 @@ body {
   }
 
   #trabajos-2d {
-    @apply w-dvw pt-24 lg:pt-24 pb-20 flex flex-col items-center relative;
+    @apply w-dvw pt-36 lg:pt-36 pb-20 flex flex-col items-center relative;
+    z-index: 1;
 
     .carousel-2d {
       @apply flex items-center gap-4 w-full max-w-5xl mx-auto px-4;
@@ -637,7 +637,7 @@ body {
     padding: 60px 5vw;
 
     .hero-title {
-      @apply mb-10;
+      @apply mb-10 text-5xl lg:text-8xl;
     }
 
     .mural-grid {
