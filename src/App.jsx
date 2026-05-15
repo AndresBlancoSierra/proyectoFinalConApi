@@ -7,8 +7,7 @@ import Intro2D from "./components/Intro2D.jsx";
 import Trabajos2D from "./components/Trabajos2D.jsx";
 import Ilustracion from "./components/Ilustracion.jsx";
 import Intro3D from "./components/Intro3D.jsx";
-import Trabajos3D from "./components/Trabajos3D.jsx";
-import Highlights from "./components/Highlights.jsx";
+import Trabajos3D3 from "./components/Trabajos3D3.jsx";
 import Footer from "./components/Footer.jsx";
 
 gsap.registerPlugin(ScrollTrigger)
@@ -21,8 +20,7 @@ const App = () => {
             <Intro2D />
             <Trabajos2D />
             <Ilustracion />
-            <Intro3D />
-            <Trabajos3D />
+            <Trabajos3D3 />
             <Footer />
             
         </main>

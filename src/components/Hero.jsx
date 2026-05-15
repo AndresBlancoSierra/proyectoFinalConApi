@@ -8,6 +8,12 @@ const pastelColors = [
 const Hero = () => {
     const titleRef = useRef();
     const letterRefs = useRef([]);
+    const audioRef = useRef(null);
+
+    useEffect(() => {
+        audioRef.current = new Audio("/new/sound.mp3");
+        audioRef.current.volume = 0.3;
+    }, []);
 
     useEffect(() => {
         const title = titleRef.current;
@@ -56,6 +62,11 @@ const Hero = () => {
                     duration: 0.25,
                     ease: "back.out(2)",
                 });
+                if (audioRef.current) {
+                    const clone = audioRef.current.cloneNode();
+                    clone.volume = 0.3;
+                    clone.play().catch(() => {});
+                }
             });
 
             letter.addEventListener("mouseleave", () => {

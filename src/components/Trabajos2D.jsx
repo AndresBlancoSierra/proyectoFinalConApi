@@ -1,14 +1,12 @@
 import { useState, useRef } from "react";
 import { trabajos2D } from "../constants/index.js";
 
-const videos = trabajos2D.filter((item) => item.type === "video");
-
 const Trabajos2D = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [selected, setSelected] = useState(null);
-    const videoRef = useRef(null);
+    const mediaRef = useRef(null);
 
-    const totalItems = videos.length;
+    const totalItems = trabajos2D.length;
     const visibleCount = 3;
     const maxStart = Math.max(0, totalItems - visibleCount);
     const startIndex = Math.min(currentIndex, maxStart);
@@ -19,9 +17,9 @@ const Trabajos2D = () => {
     const selectItem = (item) => {
         setSelected(item);
         setTimeout(() => {
-            if (videoRef.current) {
-                videoRef.current.currentTime = 0;
-                videoRef.current.play();
+            if (mediaRef.current && item.type === "video") {
+                mediaRef.current.currentTime = 0;
+                mediaRef.current.play();
             }
         }, 100);
     };
@@ -34,13 +32,17 @@ const Trabajos2D = () => {
                 <button className="carousel-arrow left" onClick={prev} disabled={currentIndex === 0}>‹</button>
 
                 <div className="carousel-2d-track">
-                    {videos.slice(startIndex, startIndex + visibleCount).map((item) => (
+                    {trabajos2D.slice(startIndex, startIndex + visibleCount).map((item) => (
                         <div
                             key={item.id}
                             className={`carousel-2d-item ${selected?.id === item.id ? "active" : ""}`}
                             onClick={() => selectItem(item)}
                         >
-                            <video src={item.src} muted loop playsInline />
+                            {item.type === "video" ? (
+                                <video src={item.src} muted loop playsInline />
+                            ) : (
+                                <img src={item.src} alt={item.title} />
+                            )}
                         </div>
                     ))}
                 </div>
@@ -53,14 +55,18 @@ const Trabajos2D = () => {
                     <button className="detail-close" onClick={closeDetail}>✕</button>
 
                     <div className="detail-media">
-                        <video
-                            ref={videoRef}
-                            src={selected.src}
-                            controls
-                            autoPlay
-                            muted
-                            playsInline
-                        />
+                        {selected.type === "video" ? (
+                            <video
+                                ref={mediaRef}
+                                src={selected.src}
+                                controls
+                                autoPlay
+                                muted
+                                playsInline
+                            />
+                        ) : (
+                            <img src={selected.src} alt={selected.title} />
+                        )}
                     </div>
 
                     {selected.storyboard && (

@@ -207,6 +207,7 @@ body {
 
   #intro-2d {
     @apply relative;
+    z-index: 2;
 
     .media {
       @apply relative lg:overflow-hidden;
@@ -442,7 +443,7 @@ body {
   }
 
   #trabajos-2d {
-    @apply w-dvw pt-16 lg:pt-16 pb-20 flex flex-col items-center relative;
+    @apply w-dvw pt-24 lg:pt-24 pb-20 flex flex-col items-center relative;
 
     .carousel-2d {
       @apply flex items-center gap-4 w-full max-w-5xl mx-auto px-4;
@@ -627,6 +628,80 @@ body {
     }
     100% {
       transform: translateX(-33.333%);
+    }
+  }
+
+  #trabajos-3d3 {
+    @apply w-full flex flex-col items-center;
+    background: #FFF5F7;
+    padding: 60px 5vw;
+
+    .hero-title {
+      @apply mb-10;
+    }
+
+    .mural-grid {
+      @apply flex flex-col gap-4 max-w-7xl mx-auto;
+    }
+
+    .mural-row {
+      @apply grid grid-cols-5 gap-4;
+    }
+
+    .mural-card {
+      @apply overflow-hidden;
+      aspect-ratio: 4 / 3;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+
+      &.empty {
+        visibility: hidden;
+      }
+
+      &:hover {
+        transform: scale(1.04);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+      }
+
+      img {
+        @apply w-full h-full object-cover;
+        display: block;
+      }
+    }
+
+    .mural-grid.blurred .mural-card:not(.empty) {
+      filter: blur(6px) brightness(0.6);
+      transition: filter 0.3s ease;
+      pointer-events: none;
+    }
+
+    .mural-overlay {
+      @apply fixed inset-0 z-[1000] flex items-center justify-center;
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(4px);
+      cursor: pointer;
+
+      img {
+        @apply max-w-[90vw] max-h-[90vh] object-contain;
+        border-radius: 12px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        cursor: default;
+      }
+    }
+
+    .mural-overlay-close {
+      @apply absolute top-6 right-8 w-10 h-10 rounded-full
+             flex items-center justify-center text-xl cursor-pointer border-none;
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+      font-size: 1.3rem;
+      transition: background 0.2s;
+
+      &:hover {
+        background: rgba(255,255,255,0.3);
+      }
     }
   }
 
