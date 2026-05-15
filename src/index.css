@@ -51,6 +51,19 @@
   --color-primary: #BAE1FF;
 }
 
+.hero-title {
+  @apply font-bold text-5xl lg:text-8xl;
+  font-family: var(--font-pastel);
+  font-weight: 600;
+  letter-spacing: normal;
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+
+  .hero-letter {
+    display: inline-block;
+    cursor: default;
+  }
+}
+
 html {
   width: 100vw;
   overflow-x: hidden;
